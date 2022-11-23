@@ -1,63 +1,64 @@
 target_settings = {
     'renderer': [
         'LuisaRender',
-        'PBRT-v4',
+        #'PBRT-v4',
         'Mitsuba3',
     ],
     'backend': [
         # 'cpu',
         'cuda',
-        'directX',
+        #'directX',
         # 'metal',
     ],
     'scene': {
         'classroom': {
             'resolution': [
-                (1920, 1080),
+                # (1920, 1080),
+                (1280, 720),
             ],
         },
-        'dining-room': {
-            'resolution': [
-                (1920, 1080),
-            ],
-        },
+        #'dining-room': {
+        #    'resolution': [
+        #        (1920, 1080),
+        #    ],
+        #},
         'living-room': {
             'resolution': [
-                (1920, 1080),
-                # (1280, 720),
+                #(1920, 1080),
+                (1280, 720),
             ],
         },
-        'coffee': {
-            'resolution': [
-                (1200, 1800),
-            ],
-        },
+        #'coffee': {
+        #    'resolution': [
+        #        (1200, 1800),
+        #    ],
+        #},
         'glass-of-water': {
             'resolution': [
-                (1920, 1080),
-                # (1280, 720),
+                # (1920, 1080),
+                (1280, 720),
             ],
         },
         'spaceship': {
             'resolution': [
-                (1920, 1080),
-                # (1280, 720),
+                #(1920, 1080),
+                (1280, 720),
             ],
         },
         'staircase': {
             'resolution': [
-                (1080, 1920),
-                # (720, 1280),
+                #(1080, 1920),
+                (720, 1280),
             ],
         },
     },
     'integrator': [
-        'WavePath',
+            #'WavePath',
         'MegaPath',
     ],
     'spectrum': [
         'RGB',
-        'Spectral',
+        #'Spectral',
     ],
     'sampler': [
         'Independent',
@@ -68,14 +69,15 @@ target_settings = {
         # 64,
         # 128,
         # 256,
-        1024,
+        512,
+        #1024,
         # 4096,
         # 8192,
         # 16384,
     ],
     'max_depth_and_rr_depth': [
         # (3, 2),
-        (8, 2),
+        # (8, 2),
         (16, 5),
         # (32, 5),
     ]
@@ -84,7 +86,7 @@ target_settings = {
 renderer_settings = {
     'LuisaRender': {
         'exe': {
-            'path': '<<FILL HERE THE PATH TO luisa-render-cli.exe>>',
+            'path': '../LuisaRender/build/bin/luisa-render-cli',
             'spectrum': None,
             'integrator': {
                 'name': {
@@ -160,7 +162,7 @@ renderer_settings = {
     },
     'Mitsuba3': {
         'exe': {
-            'path': '<<FILL HERE THE PATH TO mitsuba.exe>>',
+            'path': '../mitsuba3/build/mitsuba',
             'spectrum': {
                 'name': {
                     'RGB': 'rgb',
