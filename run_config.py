@@ -179,7 +179,7 @@ renderer_settings = {
             },
             'backend': {
                 'name': {
-                    'cuda': 'cuda',
+                    'cuda': 'cuda_ad',
                     'directX': None,
                     'metal': None,
                     'cpu': 'scalar',
