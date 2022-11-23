@@ -86,7 +86,7 @@ target_settings = {
 renderer_settings = {
     'LuisaRender': {
         'exe': {
-            'path': '../LuisaRender/build/bin/luisa-render-cli',
+            'path': 'ext/LuisaRender/build/bin/luisa-render-cli',
             'spectrum': None,
             'integrator': {
                 'name': {
@@ -162,7 +162,7 @@ renderer_settings = {
     },
     'Mitsuba3': {
         'exe': {
-            'path': '../mitsuba3/build/mitsuba',
+            'path': 'ext/mitsuba3/build/mitsuba',
             'spectrum': {
                 'name': {
                     'RGB': 'rgb',
