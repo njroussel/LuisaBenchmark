@@ -1,12 +1,13 @@
 import os
 import re
+import sys
 
 from mylogger import *
 from result_recorder import Recorder
 from run_config import *
 
 
-def test_targets():
+def test_targets(renderers):
     results = []
     results_save_file_path = os.path.join(os.path.dirname(__file__), 'outputs', 'results.csv')
     scene = ['' for i in range(100)]
@@ -30,7 +31,7 @@ def test_targets():
     logger.info('')
     logger.info('===================== start =====================')
 
-    for renderer in target_settings['renderer']:
+    for renderer in renderers:
         k = 0
 
         settings = renderer_settings[renderer]
@@ -218,4 +219,4 @@ def test_targets():
 
 
 if __name__ == '__main__':
-    test_targets()
+    test_targets(sys.argv[1:])
