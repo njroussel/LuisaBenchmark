@@ -17,11 +17,11 @@ target_settings = {
                 # (1280, 720),
             ],
         },
-        #'dining-room': {
-        #    'resolution': [
-        #        (1920, 1080),
-        #    ],
-        #},
+        'dining-room': {
+            'resolution': [
+                (1920, 1080),
+            ],
+        },
         'living-room': {
             'resolution': [
                 (1920, 1080),
@@ -30,7 +30,7 @@ target_settings = {
         },
         #'coffee': {
         #    'resolution': [
-        #        (1200, 1800),
+        #        (800, 1200),
         #    ],
         #},
         'glass-of-water': {
@@ -69,8 +69,9 @@ target_settings = {
         # 64,
         # 128,
         # 256,
-        512,
-        #1024,
+        # 512,
+        1024,
+        #2048,
         # 4096,
         # 8192,
         # 16384,
