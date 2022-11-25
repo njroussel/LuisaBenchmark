@@ -11,6 +11,12 @@ target_settings = {
         # 'metal',
     ],
     'scene': {
+        #'classroom-modified': {
+        #    'resolution': [
+        #        (1920, 1080),
+        #        # (1280, 720),
+        #    ],
+        #},
         'classroom': {
             'resolution': [
                 (1920, 1080),
@@ -22,12 +28,12 @@ target_settings = {
                 (1920, 1080),
             ],
         },
-        'living-room': {
-            'resolution': [
-                (1920, 1080),
-                # (1280, 720),
-            ],
-        },
+        #'living-room': {
+        #    'resolution': [
+        #        (1920, 1080),
+        #        # (1280, 720),
+        #    ],
+        #},
         #'coffee': {
         #    'resolution': [
         #        (800, 1200),
@@ -39,12 +45,12 @@ target_settings = {
                 # (1280, 720),
             ],
         },
-        'spaceship': {
-            'resolution': [
-                (1920, 1080),
-                # (1280, 720),
-            ],
-        },
+        #'spaceship': {
+        #    'resolution': [
+        #        (1920, 1080),
+        #        # (1280, 720),
+        #    ],
+        #},
         'staircase': {
             'resolution': [
                 (1080, 1920),
@@ -65,13 +71,13 @@ target_settings = {
     ],
     'spp': [
         # 1,
-        # 16,
-        # 64,
+        #16,
+        #64,
         # 128,
-        # 256,
-        # 512,
+        #256,
+        512,
         1024,
-        #2048,
+        2048,
         # 4096,
         # 8192,
         # 16384,
